@@ -1,0 +1,39 @@
+/* Resetting default styles for the admincp_list */
+ul.admincp_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Styling for each item in the admincp_list */
+ul.admincp_list li {
+    display: inline-block; /* Instead of float to handle margin better */
+    margin: 5px;
+}
+
+/* Clearing floats */
+.clear {
+    clear: both;
+}
+
+/* Styling for the admin title */
+h3.title_admin {
+    text-align: center;
+    font-size: 36px; /* Slightly reduced font size for better aesthetics */
+    color: #007bff; /* Blue color, you can adjust it as needed */
+}
+
+/* Styling for the wrapper */
+.wrapper {
+    border: 2px solid #ccc; /* A subtle border color */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+    padding: 20px; /* Improved spacing inside the wrapper */
+    box-sizing: border-box; /* Including padding in the overall width */
+    max-width: 1200px; /* Adding a maximum width for larger screens */
+    margin: 20px auto; /* Centering the wrapper horizontally */
+}
+body {
+    background-color: rgb(212, 174, 186); /* Set the desired shade of gray */
+    font-family: Arial, sans-serif;
+}
