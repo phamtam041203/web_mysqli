@@ -1,4 +1,9 @@
-<p>Chi tiết sản phẩm</p>
+<style>
+  p b {
+    font-size: 1.2em; /* Điều chỉnh kích thước font theo ý muốn */
+  }
+</style>
+<p><b>Chi tiết sản phẩm:</b></p>
 <?php
 	$sql_chitiet = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc AND tbl_sanpham.id_sanpham='$_GET[id]' LIMIT 1";
 	$query_chitiet = mysqli_query($mysqli,$sql_chitiet);

@@ -96,7 +96,7 @@
   }else{ 
   ?>
    <tr>
-    <td colspan="8"><p>Hiện tại giỏ hàng trống. Hãy nhanh tay chọn ngay sản phẩm yêu thích <img src="images/chuachon.png" alt="1"></p></td>
+    <td colspan="8"><p>Hiện tại giỏ hàng trống. Hãy nhanh tay chọn ngay sản phẩm yêu thích <img src="images/chuachonn.png" alt="1"></p></td>
 
     
    

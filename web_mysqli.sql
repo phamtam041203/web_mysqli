@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 23, 2023 lúc 10:35 AM
+-- Thời gian đã tạo: Th12 05, 2023 lúc 05:40 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -158,11 +158,9 @@ CREATE TABLE `tbl_dangky` (
 --
 
 INSERT INTO `tbl_dangky` (`id_dangky`, `tenkhachhang`, `email`, `diachi`, `matkhau`, `dienthoai`) VALUES
-(18, 'phamtam', '123@gmail.com', '12312', '4297f44b13955235245b2497399d7a93', '123'),
-(19, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', ''),
-(20, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', ''),
-(21, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', ''),
-(22, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '');
+(33, 'pham thanh tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', 'bb2bb77067bfe09f719cfd02a4978041', '0337629737'),
+(34, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', ''),
+(35, 'pham tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', '69a829ce4f4e0d631ca634a866590a60', '0337629737');
 
 -- --------------------------------------------------------
 
@@ -288,7 +286,17 @@ INSERT INTO `tbl_sanpham` (`id_sanpham`, `tensanpham`, `masp`, `giasp`, `soluong
 (29, 'KAKI NHUNG', '002', '400000', 700, '1700730560_2.jpg', '<p>KAKI NHUNG</p>\r\n', '<p>&Aacute;o sweater co d&atilde;n thoải m&aacute;i</p>\r\n', 1, 3),
 (30, 'COTTON SPANDEX 2', '003', '250000', 200, '1700730601_3.jpg', '<p>COTTON SPANDEX 2</p>\r\n', '<p>Thiết kế độc đ&aacute;o mới lạ</p>\r\n', 1, 3),
 (31, 'BAMBO FABRIC', '004', '250000', 300, '1700731714_4.jpg', '<p>BAMBO FABRIC</p>\r\n', '<p>Hoạ tiết bắt mắt, chất liệu vải v&ocirc; c&ugrave;ng tho&aacute;ng m&aacute;t</p>\r\n', 1, 3),
-(32, 'DÙ POLYESTER', '005', '250000', 650, '1700732052_5.jpg', '<p>D&Ugrave; POLYESTER</p>\r\n', '<p>&Aacute;o d&ugrave; tho&aacute;ng m&aacute;t, c&aacute; t&iacute;nh thời trang</p>\r\n', 1, 3);
+(32, 'DÙ POLYESTER', '005', '250000', 650, '1700732052_5.jpg', '<p>D&Ugrave; POLYESTER</p>\r\n', '<p>&Aacute;o d&ugrave; tho&aacute;ng m&aacute;t, c&aacute; t&iacute;nh thời trang</p>\r\n', 1, 3),
+(33, 'COTTON COMPACT', '006', '200000', 1500, '1700732233_6.jpg', '<p>COTTON COMPACT</p>\r\n', '<p>Sản phẩm đẹp chất lượng cao</p>\r\n', 1, 3),
+(34, 'COTTON DOUBLE FACE', '001', '250000', 700, '1701075238_1.jpg', '<p>COTTON DOUBLE FACE</p>\r\n', '<p>Cấu tr&uacute;c vải 2 mặt</p>\r\n\r\n<p>Độ bền cao</p>\r\n', 1, 2),
+(35, 'COTTON COMPACT 4C', '002', '200000', 400, '1701075275_2.2.jpg', '<p>COTTON COMPACT 4C</p>\r\n', '<p>Co d&atilde;n</p>\r\n\r\n<p>Thoải m&aacute;i</p>\r\n', 1, 2),
+(36, 'KAKI COTTON SPANDEX', '003', '150000', 800, '1701075312_3.jpg', '<p>KAKI COTTON SPANDEX</p>\r\n', '<p>Co d&atilde;n nhẹ</p>\r\n\r\n<p>Thoải m&aacute;i</p>\r\n', 1, 2),
+(38, 'COTTON COMPACT', '004', '200000', 800, '1701075366_4.jpg', '<p>COTTON COMPACT</p>\r\n', '<p>Mềm mại</p>\r\n\r\n<p>Tho&aacute;ng m&aacute;t</p>\r\n', 1, 2),
+(39, 'COTTON SPANDEX', '005', '250000', 500, '1701075406_5.jpg', '<p>COTTON SPANDEX</p>\r\n', '<p>Thoải m&aacute;i</p>\r\n\r\n<p>Co d&atilde;n</p>\r\n', 1, 2),
+(40, 'POLY RAYON SPANDEX', '006', '300000', 1000, '1701075449_6.jpg', '<p>POLY RAYON SPANDEX</p>\r\n', '<p>POLY RAYON SPANDEX&nbsp;</p>\r\n\r\n<p>FORM: BAGGY</p>\r\n', 1, 2),
+(41, 'COTTON COMPACT HORUS', '007', '250000', 1000, '1701075477_7.jpg', '<p>COTTON COMPACT HORUS</p>\r\n', '<p>COTTON COMPACT HORUS</p>\r\n', 1, 4),
+(42, 'COTTON COMPACT HORU NÂUS', '008', '250000', 700, '1701075503_8.jpg', '<p>COTTON COMPACT HORUS</p>\r\n', '<p>COTTON COMPACT HORUS</p>\r\n', 1, 2),
+(43, 'JEAN COTTON SPANDEX', '009', '200000', 1000, '1701075529_9.jpg', '<p>JEAN COTTON SPANDEX</p>\r\n', '<p>JEAN COTTON SPANDEX</p>\r\n', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -313,7 +321,10 @@ INSERT INTO `tbl_shipping` (`id_shipping`, `name`, `phone`, `address`, `note`, `
 (1, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'adasdas', 1),
 (2, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'Giao nhanh nhé', 11),
 (3, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'dasdsa', 0),
-(4, 'pham tam ', '0337629737', 'ha noi', 'phamtam dat', 16);
+(4, 'pham tam ', '0337629737', 'ha noi', 'phamtam dat', 16),
+(5, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', '123', 28),
+(6, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', '123123', 33),
+(7, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', 'hehe', 35);
 
 -- --------------------------------------------------------
 
@@ -489,7 +500,7 @@ ALTER TABLE `tbl_cart_details`
 -- AUTO_INCREMENT cho bảng `tbl_dangky`
 --
 ALTER TABLE `tbl_dangky`
-  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_danhmuc`
@@ -519,13 +530,13 @@ ALTER TABLE `tbl_momo`
 -- AUTO_INCREMENT cho bảng `tbl_sanpham`
 --
 ALTER TABLE `tbl_sanpham`
-  MODIFY `id_sanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id_sanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
-  MODIFY `id_shipping` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_shipping` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_thongke`

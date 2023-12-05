@@ -14,7 +14,7 @@
  } 
 ?>
 <body>
-	<h3 class="title_admin">Welcome to AdminCP Phạm Tâm</h3>
+	<h3 class="title_admin">Welcome to AdminCP TQT SHOP</h3>
 	<div class="wrapper">
 	<?php 
 			include("config/config.php");

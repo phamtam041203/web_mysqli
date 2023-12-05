@@ -23,15 +23,16 @@ i.fa.fa-minus.fa-style:hover {
   color: brown;
 }
 
-/* Header */
 .header {
-  background-image: url("../images/nen2.jpg");
+  background-image: url("../images/nen222.jpg");
   background-repeat: no-repeat;
-  background-size: 50% 180px;
-  border: 1px solid #ff80ff;
-  height: 100%;
+  background-size: 100% 1000px; /* Hoặc có thể sử dụng contain hoặc giá trị khác phù hợp */
+  border: 5px solid #2b998a;
+  height: 180px;
   width: 100%;
 }
+
+
 
 /* Menu */
 .menu {
@@ -57,7 +58,7 @@ ul.list_menu li:hover {
 ul.list_menu li a {
   text-decoration: none;
   text-align: center;
-  color: #3333ff;
+  color: #33ffdd;
 }
 
 ul.list_menu li {
@@ -97,7 +98,7 @@ ul.list_sidebar li:hover {
 ul.list_sidebar li a {
   text-decoration: none;
   text-align: left;
-  color: #3333ff;
+  color: #42c162;
   display: block;
 }
 
@@ -143,7 +144,7 @@ p.price_product,
 p.title_product {
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 /* Footer */
@@ -151,7 +152,7 @@ p.title_product {
   border: 1px solid #40142a;
   height: 150px;
   width: 100%;
-  background: #0b1613;
+  background: #807c83;
 }
 
 p.footer_copyright {
@@ -162,8 +163,9 @@ p.footer_copyright {
 /* Tabs */
 .tabs {
   width: 100%;
-  background-color: #00e6ac;
+  background-color: #afc6c0;
   border-radius: 5px;
+  border: 2px solid #6b3a3a;
 }
 
 ul#tabs-nav {
@@ -184,7 +186,7 @@ ul#tabs-nav li {
 
 ul#tabs-nav li:hover,
 ul#tabs-nav li.active {
-  background-color: #08E;
+  background-color: rgb(73, 99, 119);
 }
 
 #tabs-nav li a {
@@ -194,7 +196,7 @@ ul#tabs-nav li.active {
 
 .tab-content {
   padding: 10px;
-  border: 5px solid #00e6ac;
+  border: 5px solid #261643e1;
   background-color: #FFF;
 }
 
@@ -269,4 +271,12 @@ ul#tabs-nav li.active {
 .arrow-steps .step.done a {
   color: #173352;
   text-decoration: none;
+}
+
+.container-fluid{
+  background-color: rgb(174, 173, 173);
+}
+
+.themgiohang{
+  background-color: #c0d2df;
 }

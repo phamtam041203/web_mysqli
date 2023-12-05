@@ -13,7 +13,7 @@
 	$query_pro = mysqli_query($mysqli,$sql_pro);
 	
 ?>
-<h3>Sản phẩm mơí nhất</h3>
+<h3><b>Sản phẩm mới nhất:</b></h3>
 				<div class="row">
 					<?php
 					while($row = mysqli_fetch_array($query_pro)){ 

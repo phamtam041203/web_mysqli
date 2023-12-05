@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <style>
 	/* Style for the clear div (if needed) */
 .clear {
@@ -8,7 +9,7 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #red;
 }
 
 /* Style for the logo image */
@@ -45,11 +46,23 @@
 </style>
 <div class="clear"></div>
 		<div class="footer">
-			<img src="images/logo.png" alt="Logo"> 
-			<p>Mọi thông tin xin liên hệ qua: 0123456789</p>
-			<p>Facebook: Hồng Quang</p>
-			<a href="https://www.facebook.com/emdunggboanh/" class="fb-icon"><i class="fab fa-facebook-f"></i></a>
-      		<a href="#" class="gmail-icon"><i class="fab fa-google"></i></a>
+      <h1>SHOP THỜI TRANG TQT (Trendy Quality Threads)</h1>
+      <p>Trendy (theo xu hướng), Quality (chất lượng), Threads (thời trang)</p>
+      <a href="https://www.facebook.com/emdunggboanh" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-facebook-square"></i>
+</a>
+
+<!-- Gmail -->
+<a href="mailto:tamphamthanh0412@gmail.com" target="_blank" rel="noopener noreferrer">
+  <i class="far fa-envelope"></i>
+</a>
+
+<!-- YouTube -->
+<a href="https://www.youtube.com/@t.solitude" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-youtube"></i>
+</a>
+      
+      
 		</div>
 		
 
