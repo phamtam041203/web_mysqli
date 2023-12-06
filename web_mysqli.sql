@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 05, 2023 lúc 05:40 AM
+-- Thời gian đã tạo: Th12 06, 2023 lúc 12:33 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -40,7 +40,7 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id_admin`, `username`, `password`, `admin_status`) VALUES
 (1, 'webmysqli', '25f9e794323b453885f5181f1b624d0b', 1),
-(2, 'admin', 'admin', 1);
+(2, 'adminn', '123', 1);
 
 -- --------------------------------------------------------
 
@@ -57,19 +57,6 @@ CREATE TABLE `tbl_baiviet` (
   `tinhtrang` int(11) NOT NULL,
   `hinhanh` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_baiviet`
---
-
-INSERT INTO `tbl_baiviet` (`id`, `tenbaiviet`, `tomtat`, `noidung`, `id_danhmuc`, `tinhtrang`, `hinhanh`) VALUES
-(1, 'Alo bài viết mới ', '<p>Tin covid h&ocirc;m nay được cập nhật hằng ng&agrave;y với số ca nhiễm giảm dần tại tphcm v&agrave; c&aacute;c tỉnh th&agrave;nh l&acirc;n cận...</p>\r\n', '<p>dsadasdasdasdas</p>\r\n', 5, 1, '1633760717_dong-nguoi-bo-pho-ve-que-va-nhu-cau-quan-tri-cac-van-de-xa-hoi.gif'),
-(2, 'Alo bài viết mới 123', '<p>dsad</p>\r\n', '<p>asdasd</p>\r\n', 4, 1, '1633760708_dong-nguoi-bo-pho-ve-que-va-nhu-cau-quan-tri-cac-van-de-xa-hoi.gif'),
-(4, 'Alo bài viết mới bóng đá', '<p>fsdfsdf</p>\r\n', '<p>fdsfsdfsdf</p>\r\n', 2, 1, '1633760703_dong-nguoi-bo-pho-ve-que-va-nhu-cau-quan-tri-cac-van-de-xa-hoi.gif'),
-(5, 'Tin covid hôm nay', '<p>Tin covid h&ocirc;m nay được cập nhật hằng ng&agrave;y với số ca nhiễm giảm dần tại tphcm v&agrave; c&aacute;c tỉnh th&agrave;nh l&acirc;n cận...</p>\r\n', '<p>T&iacute;nh từ đầu th&aacute;ng 7 đến nay, th&agrave;nh phố đ&atilde; th&agrave;nh lập 16 bệnh viện d&atilde; chiến với quy m&ocirc; khoảng 37.000 giường, nhiệm vụ ch&iacute;nh l&agrave; tiếp nhận, điều trị F0 kh&ocirc;ng c&oacute; triệu chứng hoặc c&oacute; biểu hiện nhẹ. T&iacute;nh đến ng&agrave;y 8/10, th&agrave;nh phố ghi nhận 9.443 F0 đang điều trị tại c&aacute;c cơ sở n&agrave;y.</p>\r\n\r\n<p>Sở Y tế TP.HCM cho biết c&aacute;c bệnh viện d&atilde; chiến được trưng dụng từ khu nh&agrave; t&aacute;i định cư, k&yacute; t&uacute;c x&aacute; của trường đại học, cao đẳng n&ecirc;n kh&ocirc;ng thể sử dụng l&acirc;u d&agrave;i. Nhất l&agrave; trong bối cảnh dịch bệnh cơ bản được kiểm so&aacute;t, học sinh, sinh vi&ecirc;n bắt đầu trở lại học tập.</p>\r\n\r\n<p>Bệnh viện d&atilde; chiến số 5 (đặt tại Thuận Kiều Plaza, quận 5) l&agrave; một trong 4 bệnh viện d&atilde; chiến ngừng hoạt động sau c&ugrave;ng. Ảnh: Phạm Ng&ocirc;n.</p>\r\n\r\n<p><img alt=\"Benh vien da chien o TP.HCM anh 1\" src=\"https://znews-photo.zadn.vn/w1920/Uploaded/yfsgs/2021_07_14/covid_zing.jpg\" style=\"height:333px; width:500px\" /></p>\r\n\r\n<p><br />\r\nNguy&ecirc;n nh&acirc;n l&agrave; những bệnh viện n&agrave;y đ&atilde; được đầu tư hệ thống oxy lỏng, giường hồi sức để tiếp nhận F0 nặng.Dự kiến, c&aacute;c bệnh viện d&atilde; chiến th&agrave;nh phố lần lượt sẽ ngừng hoạt động v&agrave;o cuối th&aacute;ng 10, th&aacute;ng 11 v&agrave; th&aacute;ng 12 năm nay. Ri&ecirc;ng Bệnh viện d&atilde; chiến số 3, số 6, số 8 ở khu t&aacute;i định cư Thủ Thi&ecirc;m (An Kh&aacute;nh, TP Thủ Đức) sẽ l&agrave; những cơ sở ngừng hoạt động cuối c&ugrave;ng, dự kiến v&agrave;o cuối th&aacute;ng 12.</p>\r\n\r\n<p>Ngo&agrave;i ra, Bệnh viện d&atilde; chiến số 5 (đặt tại Thuận Kiều Plaza, quận 5) cũng trong danh s&aacute;ch cơ sở d&atilde; chiến ngừng hoạt động sau c&ugrave;ng. Bệnh viện n&agrave;y phụ tr&aacute;ch tiếp nhận c&aacute;c trường hợp F0 mức độ nhẹ v&agrave; trung b&igrave;nh từ c&aacute;c bệnh viện trong khu vực trung t&acirc;m th&agrave;nh phố (Bệnh viện Nguyễn Tr&atilde;i, Nguyễn Tri Phương, An B&igrave;nh).</p>\r\n', 5, 1, '1633760748_dong-nguoi-bo-pho-ve-que-va-nhu-cau-quan-tri-cac-van-de-xa-hoi.gif'),
-(6, 'Hi anh em', '<p>123</p>\r\n', '<p>123</p>\r\n', 0, 1, '1700728663_M4(2).jpg'),
-(7, '', '', '', 0, 1, '1700728674_'),
-(8, 'Hi anh em', '', '', 0, 1, '1700728685_M4.2(2).jpg');
 
 -- --------------------------------------------------------
 
@@ -158,9 +145,11 @@ CREATE TABLE `tbl_dangky` (
 --
 
 INSERT INTO `tbl_dangky` (`id_dangky`, `tenkhachhang`, `email`, `diachi`, `matkhau`, `dienthoai`) VALUES
-(33, 'pham thanh tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', 'bb2bb77067bfe09f719cfd02a4978041', '0337629737'),
-(34, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', ''),
-(35, 'pham tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', '69a829ce4f4e0d631ca634a866590a60', '0337629737');
+(33, 'pham thanh tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', '81dc9bdb52d04dc20036dbd8313ed055', '0337629737'),
+(34, '', '', '', '81dc9bdb52d04dc20036dbd8313ed055', ''),
+(35, 'pham tam', 'lmhttam123@gmail.com', '1331/3/1G Lê Đức Thọ, phường 13, gò vấp, hồ chí minh', '81dc9bdb52d04dc20036dbd8313ed055', '0337629737'),
+(36, '', '', '', '81dc9bdb52d04dc20036dbd8313ed055', ''),
+(37, 'pham thanh tam', 'tam@gmail.com', '0123', '81dc9bdb52d04dc20036dbd8313ed055', '0123');
 
 -- --------------------------------------------------------
 
@@ -212,7 +201,7 @@ CREATE TABLE `tbl_lienhe` (
 --
 
 INSERT INTO `tbl_lienhe` (`id`, `thongtinlienhe`) VALUES
-(1, '<ol>\r\n	<li>\r\n	<h3>Số điện thoại :<strong> </strong>0123456789 - Hồng Nhung</h3>\r\n	</li>\r\n	<li>\r\n	<h3>Zalo : 012375126 B&ugrave;i Trọng tấn</h3>\r\n	</li>\r\n	<li>\r\n	<h3>Fb :<a href=\"http://facebook.com/emdunggboanh\"> Pham Tam</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Instagram : <a href=\"http://instagram.com/nguyenhongquang\">/hongquangg</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Youtube : <a href=\"https://www.youtube.com/@t.solitude\" target=\"_blank\">youtube.com/@t.solitude</a></h3>\r\n	</li>\r\n</ol>\r\n\r\n<h3><strong>Shop TQT chuy&ecirc;n cung cấp những đồ thời trang hot nhất v&agrave; đẹp nhất hiện tại</strong></h3>\r\n\r\n<p><strong><img alt=\"\" src=\"https://saigonamthuc.vn/wp-content/uploads/2023/03/Cua-hang-thoi-trang-Yame-gan-day-nhat-5.jpg\" style=\"height:363px; width:400px\" /><img alt=\"\" src=\"https://saigonamthuc.vn/wp-content/uploads/2023/03/Cua-hang-thoi-trang-Yame-gan-day-nhat-1.jpg\" style=\"height:363px; width:400px\" /><img alt=\"123\" src=\"https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/244605248_4435501773198556_2398667555809586604_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=9G6sK_tz_ZsAX_tIS1O&amp;_nc_ht=scontent.fsgn2-10.fna&amp;oh=00_AfA9m59mxMzm6DZc2NrVSOuvTLSh9JdZxyJIPOENSuxNYQ&amp;oe=6564F8AC\" style=\"height:363px; width:484px\" /></strong></p>\r\n\r\n<h3><strong>&nbsp;</strong></h3>\r\n\r\n<h3><strong>&nbsp;</strong></h3>\r\n');
+(1, '<ol>\r\n	<li>\r\n	<h3>Số điện thoại :<strong> </strong>0986551625 - TQT SHOP</h3>\r\n	</li>\r\n	<li>\r\n	<h3>Zalo : 0337629737 - B&ugrave;i Trọng Tấn</h3>\r\n	</li>\r\n	<li>\r\n	<h3>Fb :<a href=\"http://facebook.com/emdunggboanh\"> Pham Tam</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Instagram : <a href=\"http://instagram.com/nguyenhongquang\">/hongquangg</a></h3>\r\n	</li>\r\n	<li>\r\n	<h3>Youtube : <a href=\"https://www.youtube.com/@t.solitude\" target=\"_blank\">youtube.com/@t.solitude</a></h3>\r\n	</li>\r\n</ol>\r\n\r\n<h3><strong>Shop TQT chuy&ecirc;n cung cấp những đồ thời trang hot nhất v&agrave; đẹp nhất hiện tại</strong></h3>\r\n\r\n<p><strong><img alt=\"\" src=\"https://saigonamthuc.vn/wp-content/uploads/2023/03/Cua-hang-thoi-trang-Yame-gan-day-nhat-5.jpg\" style=\"height:363px; width:400px\" /><img alt=\"\" src=\"https://saigonamthuc.vn/wp-content/uploads/2023/03/Cua-hang-thoi-trang-Yame-gan-day-nhat-1.jpg\" style=\"height:363px; width:400px\" /><img alt=\"123\" src=\"https://scontent.fsgn2-10.fna.fbcdn.net/v/t39.30808-6/244605248_4435501773198556_2398667555809586604_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=9G6sK_tz_ZsAX_tIS1O&amp;_nc_ht=scontent.fsgn2-10.fna&amp;oh=00_AfA9m59mxMzm6DZc2NrVSOuvTLSh9JdZxyJIPOENSuxNYQ&amp;oe=6564F8AC\" style=\"height:363px; width:484px\" /></strong></p>\r\n\r\n<h3><strong>&nbsp;</strong></h3>\r\n\r\n<h3><strong>&nbsp;</strong></h3>\r\n');
 
 -- --------------------------------------------------------
 
@@ -231,15 +220,6 @@ CREATE TABLE `tbl_momo` (
   `pay_type` varchar(50) NOT NULL,
   `code_cart` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_momo`
---
-
-INSERT INTO `tbl_momo` (`id_momo`, `partner_code`, `order_id`, `amount`, `order_info`, `order_type`, `trans_id`, `pay_type`, `code_cart`) VALUES
-(3, 'MOMOBKUN20180529', '1644123235', '250000', 'Thanh toán qua ATM', 'momo_wallet', '2642535948', 'napas', '9554'),
-(4, 'MOMOBKUN20180529', '1644126570', '250000', 'Thanh toán qua ATM', 'momo_wallet', '2642536202', 'napas', '3872'),
-(5, 'MOMOBKUN20180529', '1645004827', '350000', 'Thanh toán qua ATM', 'momo_wallet', '2644029861', 'napas', '1161');
 
 -- --------------------------------------------------------
 
@@ -318,13 +298,7 @@ CREATE TABLE `tbl_shipping` (
 --
 
 INSERT INTO `tbl_shipping` (`id_shipping`, `name`, `phone`, `address`, `note`, `id_dangky`) VALUES
-(1, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'adasdas', 1),
-(2, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'Giao nhanh nhé', 11),
-(3, 'Tâm pro đẹp trai', '0123456789', 'Số 1 Lê Duẩn, Bến Nghé, Quận 1, Hiệp Thành,Quận 12', 'dasdsa', 0),
-(4, 'pham tam ', '0337629737', 'ha noi', 'phamtam dat', 16),
-(5, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', '123', 28),
-(6, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', '123123', 33),
-(7, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', 'hehe', 35);
+(8, 'Mikenko.solitude Music', '0337629737', '44 Nguyễn Văn Dung, Phường 6, Gò Vấp', '', 37);
 
 -- --------------------------------------------------------
 
@@ -339,25 +313,6 @@ CREATE TABLE `tbl_thongke` (
   `doanhthu` varchar(100) NOT NULL,
   `soluongban` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Đang đổ dữ liệu cho bảng `tbl_thongke`
---
-
-INSERT INTO `tbl_thongke` (`id`, `ngaydat`, `donhang`, `doanhthu`, `soluongban`) VALUES
-(1, '2021-10-23', 50, '15500000', 25),
-(2, '2021-10-22', 55, '25500000', 25),
-(3, '2021-10-21', 50, '15600000', 30),
-(4, '2021-10-24', 10, '36500000', 30),
-(5, '2021-10-25', 2, '5600000', 10),
-(6, '2021-10-26', 8, '6500000', 9),
-(7, '2021-10-28', 2, '600000', 10),
-(8, '2021-10-29', 8, '500000', 9),
-(9, '2021-10-31', 8, '500000', 9),
-(10, '2021-10-01', 8, '500000', 9),
-(11, '2021-08-01', 8, '700000', 9),
-(12, '2021-10-03', 8, '700000', 9),
-(14, '2021-10-30', 3, '1500000', 1);
 
 -- --------------------------------------------------------
 
@@ -500,7 +455,7 @@ ALTER TABLE `tbl_cart_details`
 -- AUTO_INCREMENT cho bảng `tbl_dangky`
 --
 ALTER TABLE `tbl_dangky`
-  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_dangky` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_danhmuc`
@@ -536,7 +491,7 @@ ALTER TABLE `tbl_sanpham`
 -- AUTO_INCREMENT cho bảng `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
-  MODIFY `id_shipping` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_shipping` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_thongke`
